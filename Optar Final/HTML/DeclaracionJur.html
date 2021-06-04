@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="qrcode.js"></script>
+<style type="text/css">
+
+body {
+margin: 0mm 9mm 6mm;
+}
+
+</style>
+</head>
+<body>
+
+<table style="height: 26px;" width="750">
+<tbody>
+<tr>
+<td style="width: 300px;"><img src="Membrete.jpg" width="180" height="100"/> </td>
+<td style="width: 450px;text-align: right;font-family: Calibri;font-size:12.0pt;"><em>"2020 - A&ntilde;o del General Manuel Belgrano"</em></td>
+</tr>
+</tbody>
+</table>
+
+<h1 style="text-align: center;font-family: Calibri;font-size:18.0pt;"><span style="text-decoration: underline;"><strong>DECLARACI&Oacute;N JURADA DE CARGOS</strong></span></h2>
+<div> 
+<p style="font-family: Calibri;font-size:12.0pt;text-align:justify;line-height:150%;"> El/la que suscribe, <strong>colocar nombre</strong>, DNI:<strong> colocar dni</strong>, con domicilio en:<strong> colocar domicilio</strong>, declara bajo juramento de la Ley y dem&aacute;s Formalidades Legales NO POSEER cargo docente y/o administrativo a nivel Nacional, Provincial, Municipal y/o Privado (colocar renuncia). SUJETO A VERIFICACI&Oacute;N. </font></p>
+<p style="font-family: Calibri;font-size:12.0pt;line-height:20%;"> Santiago del Estero, fecha de hoy .&nbsp; &nbsp;</p>
+</div>
+<table style="height: 82px; float: right;font-family: Calibri; width=800px;">
+<tbody>
+<tr>
+<td style="width: 100px; text-align: left;">
+<div id="Documento">El QR va aqu&iacute;</div>
+</td>
+<td style="width: 500px; text-align: left;white-space:normal;line-height:150%px;">
+<p id="normal" style="text-align:left;line-height:80%;vertical-align:top;"> &#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Firma de Autoridades de Mesa: </p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+</td>
+
+<td style="width: 200px; text-align: right;">
+<p style="text-align: center;line-height:50%;">_____________________________</p>
+<p style="text-align: center;line-height:30%;">Firma del Optante</p>
+<p style="text-align: center;line-height:20%;"><strong>colocar nombre</strong></p>
+<p style="text-align: center;line-height:20%;">CUIL:<strong> colocar cuil</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;"><strong>&nbsp;</strong>&nbsp;&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+<p style="text-align: right; font-family: Calibri; font-size: 12.0pt; line-height: 10%;">&nbsp;</p>
+
+<script>
+  var typeNumber = 0;
+var errorCorrectionLevel = 'L';
+var qr = qrcode(typeNumber, errorCorrectionLevel);
+qr.addData('El/la que suscribe, colocar nombre, DNI: colocar dni, con domicilio en: colocar domicilio, declara bajo juramento de la Ley y demás Formalidades Legales NO POSEER cargo docente y/o administrativo a nivel Nacional, Provincial, Municipal y/o Privado (colocar renuncia). SUJETO A VERIFICACIÓN. Santiago del Estero, fecha de hoy . Documento Oficial del Consejo General de Educación de Santiago del Estero emitido desde #Optar.');
+qr.make();
+document.getElementById('Documento').innerHTML = qr.createImgTag(1,1);
+  </script>
+  
+</html>
+

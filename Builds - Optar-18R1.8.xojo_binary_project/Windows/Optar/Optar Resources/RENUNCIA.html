@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="qrcode.js"></script>
+<style type="text/css">
+
+body {
+margin: 0mm 9mm 6mm;
+}
+</style>
+
+<body lang=ES-AR style='tab-interval:35.4pt'>
+<table style="height: 26px;" width="750">
+<tbody>
+<tr>
+<td style="width: 300px;"><img src="Membrete.jpg" width="180" height="100"/> </td>
+<td style="width: 450px;text-align: right;font-family: Calibri;font-size:12.0pt;"><em>"2020 - A&ntilde;o del General Manuel Belgrano "</em></td>
+</tr>
+</tbody>
+</table>
+
+<h1 style="text-align: center;font-family: Calibri;font-size:16.0pt;"><span style="text-decoration: underline;"><strong>RENUNCIA DE CARGO</strong></span></h1>
+
+<div> 
+<p style="font-family: Calibri;font-size:12.0pt;text-align:justify;line-height:110%;">El Sr/a.<strong> colocar nombre</strong> DNI <strong> colocar dni </strong>
+ , renuncia al/los cargo/s de: 
+<strong>colocar cargos </strong> de la/s Instituci&oacuten/s: <strong>colocar institucion</strong>, a fin de poder 
+optar conforme al Inciso g) del Art&iacuteculo 4&deg; del Anexo I, de la Resoluci&oacuten 154/18 emitida por el Consejo General de Educaci&oacuten.  
+</div>
+<div>
+<p style="text-align: left;font-family: Calibri;font-size:12.0pt;line-height:20%;"> Santiago del Estero, fecha de hoy </p>
+<p><strong>&nbsp;</strong></p>
+</div>
+<table style="height: 200px; font-family: Calibri;font-size:12.0pt;" width="800">
+<tbody>
+<tr>
+<td style="width: 191px;text-align:center;line-height:150%;">
+<p style="text-align: center;line-height:50%;">_____________________</p>
+<p style="text-align: center;line-height:20%;">Firma del testigo</p>
+<p style="text-align: center;line-height:80%;">____________________</p>
+<p style="text-align: center;line-height:20%;">Aclaraci&oacute;n</p>
+<p style="text-align: center;line-height:50%;">___________________</p>
+<p style="text-align: center;line-height:20%;">DNI N&deg;</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="width: 192px;text-align:center;line-height:150%;">
+<p style="text-align: center;line-height:50%;">_____________________</p>
+<p style="text-align: center;line-height:20%;">Firma del testigo</p>
+<p style="text-align: center;line-height:80%;">_____________________</p>
+<p style="text-align: center;line-height:20%;">Aclaraci&oacute;n</p>
+<p style="text-align: center;line-height:50%;">_____________________</p>
+<p style="text-align: center;line-height:20%;">DNI N&deg;</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="width: 250px;text-align:center;line-height:150%;">
+<p style="text-align: center;line-height:50%;">_____________________</p>
+<p style="text-align: center;line-height:20%;">Firma del Renunciante</p>
+<p style="text-align: center;line-height:20%;"><strong>colocar nombre</strong></p>
+<p style="text-align: center;line-height:20%;"><strong>DNI N&deg; colocar dni</strong></p>
+<p><strong>&nbsp;</strong></p>
+<div id="Documento">El QR va aqu&iacute;</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+
+</body>
+
+<script>
+  var typeNumber = 0;
+var errorCorrectionLevel = 'H';
+var qr = qrcode(typeNumber, errorCorrectionLevel);
+qr.addData('El Sr/a. colocar nombre DNI colocar dni , renuncia al/los cargo/s de: colocar cargos de la/s Institución/s: colocar institucion, a fin de poder optar conforme al Inciso g) del Artículo 4° del Anexo I, de la Resolución 154/18 emitida por el Consejo General de Educación. Santiago del Estero, fecha de hoy. Documento Oficial del Consejo General de Educación de Santiago del Estero emitido desde #Optar.');
+qr.make();
+document.getElementById('Documento').innerHTML = qr.createImgTag(1,1);
+  </script>
+</html>

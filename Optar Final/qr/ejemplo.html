@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<script type="text/javascript" src="qrcode.js"></script>
+  <head>   
+    <title>QR Code Generator for JavaScript</title>
+  </head>
+   <body onload="body_loadHander()">
+   
+	<div id="Documento">Esto es un documento oficial del consejo general de educación</div>
+      
+ 
+  </body>
+  
+  <script>
+  var typeNumber = 0;
+var errorCorrectionLevel = 'L';
+var qr = qrcode(typeNumber, errorCorrectionLevel);
+qr.addData('Esto es un Documento oficial del consejo general de educacion');
+qr.make();
+document.getElementById('Documento').innerHTML = qr.createImgTag(2,2);
+  </script>
+</html>
